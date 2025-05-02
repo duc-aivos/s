@@ -1,0 +1,507 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuối Banana Shop</title>
+    <link rel="icon" type="image/x-icon" href="imgs/favico.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&amp;display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <style>
+        :root {
+            font-family: 'Inter', sans-serif;
+        }
+        body,
+        html {
+            scroll-behavior: smooth !important;
+        }
+        /* Custom CSS for banana site images */
+        .hero-img {
+            max-width: 300px;
+            border-radius: 1rem;
+        }
+        .product-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 0.5rem;
+        }
+        .blog-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 0.5rem;
+        }
+        .contact-img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 1rem;
+            margin: auto;
+            display: block;
+        }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.16 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.relative{position:relative}.mx-auto{margin-left:auto;margin-right:auto}.mb-16{margin-bottom:4rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-8{margin-bottom:2rem}.ml-2{margin-left:0.5rem}.ml-auto{margin-left:auto}.ms-5{margin-inline-start:1.25rem}.mt-1{margin-top:0.25rem}.mt-10{margin-top:2.5rem}.mt-2{margin-top:0.5rem}.mt-3{margin-top:0.75rem}.mt-4{margin-top:1rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.grid{display:grid}.h-10{height:2.5rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.h-8{height:2rem}.w-10{width:2.5rem}.w-5{width:1.25rem}.w-6{width:1.5rem}.w-72{width:18rem}.w-8{width:2rem}.w-full{width:100%}.max-w-\[200px\]{max-width:200px}.max-w-\[292px\]{max-width:292px}.max-w-screen-lg{max-width:1024px}.max-w-screen-xl{max-width:1280px}.flex-shrink-0{flex-shrink:0}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.flex-row{flex-direction:row}.flex-col{flex-direction:column}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-0{gap:0px}.gap-10{gap:2.5rem}.gap-12{gap:3rem}.gap-2{gap:0.5rem}.gap-20{gap:5rem}.gap-8{gap:2rem}.gap-x-16{column-gap:4rem}.gap-y-20{row-gap:5rem}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.rounded{border-radius:0.25rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-transparent{border-color:transparent}.bg-\[\#f1f1f1\]{--tw-bg-opacity:1;background-color:rgb(241 241 241 / var(--tw-bg-opacity, 1))}.bg-black{--tw-bg-opacity:1;background-color:rgb(0 0 0 / var(--tw-bg-opacity, 1))}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-gradient-to-b{background-image:linear-gradient(to bottom, var(--tw-gradient-stops))}.from-slate-50{--tw-gradient-from:#f8fafc var(--tw-gradient-from-position);--tw-gradient-to:rgb(248 250 252 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.to-slate-100{--tw-gradient-to:#f1f5f9 var(--tw-gradient-to-position)}.fill-current{fill:currentColor}.object-cover{object-fit:cover}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-8{padding-left:2rem;padding-right:2rem}.py-10{padding-top:2.5rem;padding-bottom:2.5rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-20{padding-top:5rem;padding-bottom:5rem}.pb-20{padding-bottom:5rem}.pb-8{padding-bottom:2rem}.text-center{text-align:center}.text-2xl{font-size:1.5rem;line-height:2rem}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-semibold{font-weight:600}.leading-tight{line-height:1.25}.text-black{--tw-text-opacity:1;color:rgb(0 0 0 / var(--tw-text-opacity, 1))}.text-gray-100{--tw-text-opacity:1;color:rgb(243 244 246 / var(--tw-text-opacity, 1))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity, 1))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81 / var(--tw-text-opacity, 1))}.text-gray-900{--tw-text-opacity:1;color:rgb(17 24 39 / var(--tw-text-opacity, 1))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.hover\:bg-black\/80:hover{background-color:rgb(0 0 0 / 0.8)}@media (min-width: 640px){.sm\:ms-8{margin-inline-start:2rem}.sm\:h-6{height:1.5rem}.sm\:w-6{width:1.5rem}.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:px-7{padding-left:1.75rem;padding-right:1.75rem}.sm\:text-lg{font-size:1.125rem;line-height:1.75rem}}@media (min-width: 768px){.md\:mb-0{margin-bottom:0px}.md\:w-1\/2{width:50%}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}.md\:gap-16{gap:4rem}.md\:px-0{padding-left:0px;padding-right:0px}.md\:text-left{text-align:left}}@media (min-width: 1024px){.lg\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.lg\:gap-x-24{column-gap:6rem}.lg\:space-y-10 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(2.5rem * var(--tw-space-y-reverse))}.lg\:text-5xl{font-size:3rem;line-height:1}}</style></head>
+<body class="antialiased px-4 md:px-0" data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0" >
+    <!-- HEADER -->
+    <header>
+        <div class="mx-auto sm:px-7 px-4 max-w-screen-xl py-10">
+            <div class="flex items-center">
+                <a href="/app.html" style="font-family: 'Nothing You Could Do', cursive;" class="text-2xl font-bold">Chuối BanzxZana Shop</a>
+                <button class="ml-auto bg-black rounded-lg hover:bg-black/80 duration-300 transition-colors border border-transparent px-8 py-2.5" title="View Cart">
+                    <!-- Using same SVG icon to represent shopping cart -->
+                    <svg class="w-5 h-5 sm:h-6 sm:w-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 4h-2l-1 2h2l3.6 7.59-1.35 2.44A1 1 0 008 18h12v-2H8.42a.25.25 0 01-.22-.14L9 13h7a1 1 0 00.92-.62l3-7A1 1 0 0019 4H7z" fill="white"></path>
+                        <circle cx="9" cy="20" r="1" fill="white"></circle>
+                        <circle cx="17" cy="20" r="1" fill="white"></circle>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero">
+        <div class="mx-auto sm:px-7 px-4 max-w-screen-lg py-10 pb-20">
+            <div class="flex flex-col md:flex-row items-center gap-20">
+                <div style="min-width:300px;" data-aos="fade-right" data-aos-delay="50" class="aos-init aos-animate">
+                    <img class="hero-img" src="https://images.unsplash.com/photo-1528825871115-3581a5387919?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3MzQ0MzV8MHwxfHNlYXJjaHwxfHxCYW5hbmF8ZW58MHx8fHwxNzQ2MTU5NzU0fDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080" alt="Banana 🍌">
+                </div>
+                <div data-aos="fade-left" data-aos-delay="200" class="aos-init aos-animate">
+                    <h1 class="text-2xl font-bold lg:text-5xl pb-8">
+                        <span style="font-family: 'Nothing You Could Do', cursive;">Welcome to</span><br>
+                        Chuối Banana Shop
+                    </h1>
+                    <p class="text-xl pb-8">
+                        Discover the freshest and most vibrant bananas from around the tropics. Handpicked daily for quality and taste.
+                    </p>
+                    <a href="#products" class="mb-8 inline-block text-white bg-black rounded-lg hover:bg-black/80 duration-300 transition-colors border border-transparent px-8 py-2.5">
+                        Shop Now <i class="bi bi-arrow-right"></i>
+                    </a>
+                    <div class="bg-gray-100 p-5 rounded max-w-[292px] flex gap-2 items-center text-center">
+                        <div class="flex item-center">
+                            <svg class="w-5 h-5 text-gray-900 fill-current" viewBox="0 0 24 24">
+                                <path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21 12 17.27Z"></path>
+                            </svg>
+                            <svg class="w-5 h-5 text-gray-900 fill-current" viewBox="0 0 24 24">
+                                <path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21 12 17.27Z"></path>
+                            </svg>
+                            <svg class="w-5 h-5 text-gray-900 fill-current" viewBox="0 0 24 24">
+                                <path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21 12 17.27Z"></path>
+                            </svg>
+                            <svg class="w-5 h-5 text-gray-900 fill-current" viewBox="0 0 24 24">
+                                <path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21 12 17.27Z"></path>
+                            </svg>
+                            <svg class="w-5 h-5 text-gray-900 fill-current" viewBox="0 0 24 24">
+                                <path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21 12 17.27Z"></path>
+                            </svg>
+                        </div>
+                        <span class="text-dark text-xs">5.0/5 (1M+ Banana Lovers)</span>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US SECTION -->
+    <section id="why" class="bg-[#f1f1f1]">
+        <div class="mx-auto sm:px-7 px-4 max-w-screen-xl py-20">
+            <h2 class="text-2xl font-bold lg:text-5xl pb-8">
+                Why Choose <span style="font-family: 'Nothing You Could Do', cursive;">Chuối</span>?
+            </h2>
+            <p class="mb-16 text-xl">
+                From sustainably grown orchards to handpicked perfection, our bananas are a cut above the rest.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-16 lg:gap-x-24 gap-y-20">
+                <div>
+                    <div class="flex items-center justify-center w-8 h-8 mb-4 text-gray-100 bg-black rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11H9v4h2V7zm0 6H9v2h2v-2z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="mb-2 text-base font-semibold leading-tight text-gray-900">Fresh &amp; Organic</h3>
+                    <p class="text-sm text-gray-500">Picked at peak ripeness to ensure the best flavor and nutrients.</p>
+                </div>
+                <div>
+                    <div class="flex items-center justify-center w-8 h-8 mb-4 text-gray-100 bg-black rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5" aria-hidden="true">
+                            <path d="M2 5a2 2 0 012-2h3.28a2 2 0 011.789 1.106l.447.894A2 2 0 0011.28 5H16a2 2 0 012 2v2a2 2 0 01-2 2h-1l-2 4H7l-2-4H4a2 2 0 01-2-2V5z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="mb-2 text-base font-semibold leading-tight text-gray-900">Nutritional Powerhouse</h3>
+                    <p class="text-sm text-gray-500">Rich in potassium, fiber, and essential vitamins to keep you energized.</p>
+                </div>
+                <div>
+                    <div class="flex items-center justify-center w-8 h-8 mb-4 text-gray-100 bg-black rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5" aria-hidden="true">
+                            <path d="M11 17a1 1 0 01-1 1H6a1 1 0 01-1-1V7H3l7-4 7 4h-2v10a1 1 0 01-1 1h-4z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="mb-2 text-base font-semibold leading-tight text-gray-900">Handpicked Daily</h3>
+                    <p class="text-sm text-gray-500">Every banana is individually inspected to meet our high quality standards.</p>
+                </div>
+                <div>
+                    <div class="flex items-center justify-center w-8 h-8 mb-4 text-gray-100 bg-black rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M4 3a1 1 0 011-1h2a1 1 0 011 1v1h4V3a1 1 0 011-1h2a1 1 0 011 1v1h1a1 1 0 011 1v2a1 1 0 01-1 1h-1v4h1a1 1 0 011 1v2a1 1 0 01-1 1h-1v1a1 1 0 01-1 1h-2a1 1 0 01-1-1v-1H8v1a1 1 0 01-1 1H5a1 1 0 01-1-1v-1H3a1 1 0 01-1-1v-2a1 1 0 011-1h1V8H3a1 1 0 01-1-1V5a1 1 0 011-1h1V3z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="mb-2 text-base font-semibold leading-tight text-gray-900">Sustainable Farming</h3>
+                    <p class="text-sm text-gray-500">We partner with eco-friendly farms to bring you bananas with care for nature.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCT CATALOG SECTION -->
+    <section id="products">
+        <div class="mx-auto sm:px-7 px-4 max-w-screen-xl py-20">
+            <h2 class="text-2xl font-bold lg:text-5xl pb-8">
+                Our Banana Selection
+            </h2>
+            <p class="mb-16 text-xl">
+                Choose from our variety of premium bananas, each packed with flavor and goodness.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Product 1 -->
+                <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+                    <img class="product-img" src="https://images.unsplash.com/photo-1587132137056-bfbf0166836e?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3MzQ0MzV8MHwxfHNlYXJjaHwyfHxCYW5hbmF8ZW58MHx8fHwxNzQ2MTU5NzU0fDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080" alt="High-quality photo of a banana on a white background">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Classic Yellow</h3>
+                        <p class="text-gray-700 mb-4">Rich in potassium and flavor. Perfect for snacking and smoothies.</p>
+                        <p class="font-semibold">Price: $0.99 / lb</p>
+                        <p class="text-sm text-gray-500">Nutritional Info: 105 calories, 27g carbs, 1g protein</p>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+                    <img class="product-img" src="https://images.unsplash.com/photo-1603833665858-e61d17a86224?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3MzQ0MzV8MHwxfHNlYXJjaHwzfHxCYW5hbmF8ZW58MHx8fHwxNzQ2MTU5NzU0fDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080" alt="Banana">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Organic Delight</h3>
+                        <p class="text-gray-700 mb-4">Grown organically with care. A nutritious treat for breakfast or dessert.</p>
+                        <p class="font-semibold">Price: $1.29 / lb</p>
+                        <p class="text-sm text-gray-500">Nutritional Info: 110 calories, 28g carbs, 1.2g protein</p>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+                    <img class="product-img" src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3MzQ0MzV8MHwxfHNlYXJjaHw0fHxCYW5hbmF8ZW58MHx8fHwxNzQ2MTU5NzU0fDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080" alt="Yellow Bananas">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Tropical Sweet</h3>
+                        <p class="text-gray-700 mb-4">Naturally sweet and bursting with tropical flavor. Ideal for desserts and shakes.</p>
+                        <p class="font-semibold">Price: $1.49 / lb</p>
+                        <p class="text-sm text-gray-500">Nutritional Info: 115 calories, 30g carbs, 1.3g protein</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR VISION / BANANA PHILOSOPHY SECTION -->
+    <section id="vision">
+        <div class="mx-auto sm:px-7 px-4 max-w-screen-xl py-20">
+            <div class="flex flex-col md:flex-row gap-10 items-center">
+                <div class="w-full max-w-[200px]">
+                    <img class="w-full max-w-[200px]" src="https://images.unsplash.com/photo-1481349518771-20055b2a7b24?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3MzQ0MzV8MHwxfHNlYXJjaHw1fHxCYW5hbmF8ZW58MHx8fHwxNzQ2MTU5NzU0fDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080" alt="Artistic banana view at sunset">
+                </div>
+                <div class="grid gap-12">
+                    <div>
+                        <h2 class="text-2xl font-bold lg:text-5xl pb-8">
+                            <span style="font-family: 'Nothing You Could Do', cursive;">Our</span> Banana Philosophy
+                        </h2>
+                        <p class="mt-3">
+                            We believe in celebrating nature’s bounty with every bunch. Our bananas are more than fruit – they’re a way of life inspired by tradition, innovation, and a touch of tropical magic.
+                        </p>
+                    </div>
+                    <div class="space-y-6 lg:space-y-10">
+                        <div class="flex">
+                            <svg class="flex-shrink-0 mt-2 h-6 w-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"></path>
+                                <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"></path>
+                                <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"></path>
+                                <path d="M10 6h4"></path>
+                                <path d="M10 10h4"></path>
+                                <path d="M10 14h4"></path>
+                                <path d="M10 18h4"></path>
+                            </svg>
+                            <div class="ms-5 sm:ms-8">
+                                <h3 class="text-base sm:text-lg font-semibold">
+                                    Premium Quality
+                                </h3>
+                                <p class="mt-1">
+                                    We meticulously select only the ripest and most flavorful bananas.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <svg class="flex-shrink-0 mt-2 h-6 w-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M14.31 8l5.74 9.94"></path>
+                                <path d="M9.69 8h11.48"></path>
+                                <path d="M7.38 12l5.74-9.94"></path>
+                                <path d="M9.69 16L3.95 6.06"></path>
+                            </svg>
+                            <div class="ms-5 sm:ms-8">
+                                <h3 class="text-base sm:text-lg font-semibold">
+                                    Community Driven
+                                </h3>
+                                <p class="mt-1">
+                                    We support local farmers and foster a community of banana enthusiasts.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <svg class="flex-shrink-0 mt-2 h-6 w-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M7 10v12"></path>
+                                <path d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2h0a3.13 3.13 0 0 1 3 3.88Z"></path>
+                            </svg>
+                            <div class="ms-5 sm:ms-8">
+                                <h3 class="text-base sm:text-lg font-semibold">
+                                    Sustainable Practices
+                                </h3>
+                                <p class="mt-1">
+                                    Our methods are environmentally responsible – from harvest to doorstep.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOG SECTION -->
+    <section id="blog" class="bg-[#f1f1f1]">
+        <div class="mx-auto sm:px-7 px-4 max-w-screen-xl py-20">
+            <h2 class="text-2xl font-bold lg:text-5xl pb-8">
+                Banana Blog
+            </h2>
+            <p class="mb-16 text-xl">
+                Explore delicious recipes, health tips, and fun banana facts!
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <!-- Blog Post 1 -->
+                <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+                    <img class="blog-img" src="https://images.unsplash.com/photo-1603052875302-d376b7c0638a?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3MzQ0MzV8MHwxfHNlYXJjaHw4fHxCYW5hbmF8ZW58MHx8fHwxNzQ2MTU5NzU0fDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080" alt="Yellow banana fruit on gray table">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Tropical Banana Smoothie Recipe</h3>
+                        <p class="text-gray-700 mb-4">Learn how to blend the perfect banana smoothie with a tropical twist that fuels your day.</p>
+                        <a href="#" class="text-black underline">Read More</a>
+                    </div>
+                </div>
+                <!-- Blog Post 2 -->
+                <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+                    <img class="blog-img" src="https://images.unsplash.com/photo-1594489428504-5c0c480a15fd?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3MzQ0MzV8MHwxfHNlYXJjaHw2fHxCYW5hbmF8ZW58MHx8fHwxNzQ2MTU5NzU0fDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080" alt="Yellow banana fruit on brown wooden chopping board">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">5 Health Benefits of Bananas</h3>
+                        <p class="text-gray-700 mb-4">Discover how bananas can boost your energy, improve digestion, and more.</p>
+                        <a href="#" class="text-black underline">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <div class="mx-auto sm:px-7 px-4 max-w-screen-xl py-20">
+            <h2 class="text-2xl font-bold lg:text-5xl pb-8">
+                Contact Us
+            </h2>
+            <p class="mb-16 text-xl">
+                Have questions or need assistance? Our team is here to help.
+            </p>
+            <div class="flex flex-col md:flex-row items-center gap-10">
+                <form class="w-full md:w-1/2 bg-white shadow-lg rounded-xl p-8">
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-semibold mb-2" for="name">Name</label>
+                        <input class="w-full border rounded px-3 py-2" type="text" id="name" placeholder="Your Name">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-semibold mb-2" for="email">Email</label>
+                        <input class="w-full border rounded px-3 py-2" type="email" id="email" placeholder="Your Email">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-semibold mb-2" for="message">Message</label>
+                        <textarea class="w-full border rounded px-3 py-2" id="message" rows="4" placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="bg-black text-white rounded-lg px-8 py-2.5 hover:bg-black/80 transition-colors">
+                        Send Message
+                    </button>
+                </form>
+                <div class="w-full md:w-1/2">
+                    <img class="contact-img" src="https://images.unsplash.com/photo-1604148482093-d55d6fc62400?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3MzQ0MzV8MHwxfHNlYXJjaHw3fHxCYW5hbmF8ZW58MHx8fHwxNzQ2MTU5NzU0fDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080" alt="Banana still life on blue surface">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section id="FAQ" class="bg-[#f1f1f1]">
+        <div class="mx-auto sm:px-7 px-4 max-w-screen-xl py-20">
+            <div class="flex items-center">
+                <h2 class="text-2xl font-bold lg:text-5xl pb-8">
+                    <span style="font-family: 'Nothing You Could Do', cursive;">Frequently</span> Asked Questions
+                </h2>
+                <img class="ml-auto w-full max-w-[200px]" src="https://images.unsplash.com/photo-1605666807892-8c11d020bede?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3MzQ0MzV8MHwxfHNlYXJjaHwxMHx8QmFuYW5hfGVufDB8fHx8MTc0NjE1OTc1NHww&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080" alt="Banana unporn erotic">
+            </div>
+            <div class="grid grid-cols-1 gap-0 md:grid-cols-2 md:gap-16">
+                <div>
+                    <h5 class="mt-10 mb-3 font-semibold text-gray-900">What types of bananas do you offer?</h5>
+                    <p>
+                        We feature a variety of bananas including classic yellow, organic delights, and tropical sweet varieties.
+                    </p>
+                    <h5 class="mt-10 mb-3 font-semibold text-gray-900">How are your bananas sourced?</h5>
+                    <p>
+                        Our bananas are sourced from trusted, sustainable farms where they are handpicked at the peak of ripeness.
+                    </p>
+                    <h5 class="mt-10 mb-3 font-semibold text-gray-900">Do you offer international shipping?</h5>
+                    <p>
+                        Yes, we ship worldwide. Shipping charges and delivery times vary based on destination.
+                    </p>
+                </div>
+                <div>
+                    <h5 class="mt-10 mb-3 font-semibold text-gray-900">What is the best way to store bananas?</h5>
+                    <p>
+                        For optimal freshness, store bananas at room temperature. If they become overripe, you can freeze them for smoothies.
+                    </p>
+                    <h5 class="mt-10 mb-3 font-semibold text-gray-900">Are your bananas organic?</h5>
+                    <p>
+                        Many of our offerings are organically grown. Look for the "Organic" label on our product descriptions.
+                    </p>
+                    <h5 class="mt-10 mb-3 font-semibold text-gray-900">Who can I contact for support?</h5>
+                    <p>
+                        Please email our support team at <a href="mailto:support@chuoibanashop.com" class="underline">support@chuoibanashop.com</a> for assistance.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section id="testimonials">
+        <div class="mx-auto sm:px-7 px-4 max-w-screen-xl py-20">
+            <h2 class="text-2xl font-bold lg:text-5xl pb-8">
+                <span style="font-family: 'Nothing You Could Do', cursive;">Testimonials</span>
+            </h2>
+            <div class="swiper swiper-initialized swiper-horizontal swiper-free-mode swiper-backface-hidden">
+                <div class="swiper-wrapper items-center flex flex-row" id="swiper-wrapper-2619c8287686d725" aria-live="off">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 3" data-swiper-slide-index="0" style="width: 388.333px; margin-right: 10px;">
+                        <div class="flex flex-col gap-8">
+                            <div class="bg-gradient-to-b from-slate-50 to-slate-100 w-72 shadow-lg mx-auto rounded-xl p-4">
+                                <p class="text-gray-600">
+                                    <span class="text-lg font-bold text-slate-800">“</span>
+                                    I’ve never tasted bananas so fresh and delicious! This shop truly brings the tropical vibe to my breakfast table.
+                                    <span class="text-lg font-bold text-slate-800">”</span>
+                                </p>
+                                <div class="flex items-center mt-4">
+                                    <a href="#" class="relative block">
+                                        <img alt="Customer photo" src="https://images.unsplash.com/photo-1603052875302-d376b7c0638a?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3MzQ0MzV8MHwxfHNlYXJjaHw4fHxCYW5hbmF8ZW58MHx8fHwxNzQ2MTU5NzU0fDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080" class="mx-auto object-cover rounded-full h-10 w-10 ">
+                                    </a>
+                                    <div class="flex flex-col justify-between ml-2">
+                                        <span class="text-sm font-semibold text-slate-800">
+                                            Minh Nguyen
+                                        </span>
+                                        <span class="flex items-center text-xs">
+                                            Banana Lover
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 3" data-swiper-slide-index="1" style="width: 388.333px; margin-right: 10px;">
+                        <div class="flex flex-col gap-8">
+                            <div class="bg-gradient-to-b from-slate-50 to-slate-100 w-72 shadow-lg mx-auto rounded-xl p-4">
+                                <p class="text-gray-600">
+                                    <span class="text-lg font-bold text-slate-800">“</span>
+                                    Exceptional quality and service. The organic bananas have become a staple in my kitchen.
+                                    <span class="text-lg font-bold text-slate-800">”</span>
+                                </p>
+                                <div class="flex items-center mt-4">
+                                    <a href="#" class="relative block">
+                                        <img alt="Customer photo" src="https://images.unsplash.com/photo-1605666807892-8c11d020bede?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3MzQ0MzV8MHwxfHNlYXJjaHwxMHx8QmFuYW5hfGVufDB8fHx8MTc0NjE1OTc1NHww&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080" class="mx-auto object-cover rounded-full h-10 w-10">
+                                    </a>
+                                    <div class="flex flex-col justify-between ml-2">
+                                        <span class="text-sm font-semibold text-slate-800">
+                                            Lara Smith
+                                        </span>
+                                        <span class="flex items-center text-xs">
+                                            Health Enthusiast
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide" role="group" aria-label="3 / 3" data-swiper-slide-index="2" style="width: 388.333px; margin-right: 10px;">
+                        <div class="flex flex-col gap-8">
+                            <div class="bg-gradient-to-b from-slate-50 to-slate-100 w-72 shadow-lg mx-auto rounded-xl p-4">
+                                <p class="text-gray-600">
+                                    <span class="text-lg font-bold text-slate-800">“</span>
+                                    Their banana blog is full of creative recipes and tips. I love supporting a shop that cares about quality.
+                                    <span class="text-lg font-bold text-slate-800">”</span>
+                                </p>
+                                <div class="flex items-center mt-4">
+                                    <a href="#" class="relative block">
+                                        <img alt="Customer photo" src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3MzQ0MzV8MHwxfHNlYXJjaHw0fHxCYW5hbmF8ZW58MHx8fHwxNzQ2MTU5NzU0fDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080" class="mx-auto object-cover rounded-full h-10 w-10 ">
+                                    </a>
+                                    <div class="flex flex-col justify-between ml-2">
+                                        <span class="text-sm font-semibold text-slate-800">
+                                            Jorge Martinez
+                                        </span>
+                                        <span class="flex items-center text-xs">
+                                            Culinary Blogger
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#f1f1f1]">
+        <div class="mx-auto sm:px-7 px-4 max-w-screen-xl py-10">
+            <div class="flex items-center">
+                <p class="mb-8 text-sm text-center text-gray-700 md:text-left md:mb-0">© Copyright 2023 Chuối Banana Shop. All Rights Reserved.</p>
+                <button class="ml-auto bg-black rounded-lg hover:bg-black/80 duration-300 transition-colors border border-transparent px-8 py-2.5">
+                    <svg class="w-5 h-5 sm:h-6 sm:w-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.8426 17.1449C20.5099 17.9135 20.1161 18.6211 19.6598 19.2715C19.0378 20.1583 18.5286 20.7721 18.1361 21.113C17.5277 21.6724 16.8759 21.959 16.1779 21.9753C15.6768 21.9753 15.0725 21.8327 14.3691 21.5434C13.6633 21.2555 13.0148 21.113 12.4217 21.113C11.7998 21.113 11.1327 21.2555 10.4193 21.5434C9.70469 21.8327 9.12904 21.9834 8.68892 21.9984C8.01957 22.0269 7.35239 21.7322 6.68644 21.113C6.26139 20.7422 5.72974 20.1067 5.09285 19.2063C4.40951 18.2449 3.84772 17.13 3.4076 15.8589C2.93624 14.486 2.69995 13.1565 2.69995 11.8694C2.69995 10.3951 3.01853 9.12345 3.65665 8.05784C4.15815 7.20191 4.82533 6.52672 5.66035 6.03105C6.49537 5.53539 7.39761 5.2828 8.36925 5.26664C8.9009 5.26664 9.59809 5.43109 10.4645 5.75429C11.3284 6.07858 11.8832 6.24303 12.1264 6.24303C12.3082 6.24303 12.9245 6.05074 13.9692 5.66738C14.9571 5.31186 15.7909 5.16466 16.474 5.22264C18.3249 5.37202 19.7155 6.10167 20.6402 7.41619C18.9849 8.4192 18.166 9.82403 18.1823 11.6262C18.1972 13.03 18.7065 14.1981 19.7073 15.1256C20.1609 15.5561 20.6674 15.8888 21.231 16.1251C21.1087 16.4795 20.9797 16.819 20.8426 17.1449ZM16.5975 0.440369C16.5975 1.54062 16.1956 2.56792 15.3944 3.51878C14.4275 4.64917 13.258 5.30236 11.9898 5.19929C11.9736 5.06729 11.9642 4.92837 11.9642 4.78239C11.9642 3.72615 12.424 2.59576 13.2406 1.67152C13.6483 1.20356 14.1667 0.814453 14.7955 0.504058C15.4229 0.198295 16.0163 0.0292007 16.5744 0.000244141C16.5907 0.147331 16.5975 0.294426 16.5975 0.440355V0.440369Z" fill="white"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 4,
+            spaceBetween: 10,
+            loop: true,
+            autoplay: {
+                delay: 5000
+            },
+            freeMode: true,
+            breakpoints: {
+                1320: { slidesPerView: 4 },
+                1000: { slidesPerView: 3 },
+                700: { slidesPerView: 2 },
+                100: { slidesPerView: 1 }
+            }
+        });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body></html>
